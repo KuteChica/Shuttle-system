@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Login | Shuttle System</title>
-        <link rel ="stylesheet" href="../css/login.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+        <link rel="stylesheet" href="../Css/login.css">
+
     </head>
     <body>
+        <div class = main-container>
 
-        <!-- The main container to hold everything-->
-        <div class = "main-container">
-
-            <!--let had side bus image-->
-            <div class=" Img">
-
+            <div>
+                <img src="../Images/login.jpeg" alt="logo" class = "img.logo">
             </div>
 
-            <!--Second container with the form inputs-->
-            <div>
+            <div class = "right-container">
                 <form>
+                    <h1>Shuttle Sustem</h1>
+
+                    <h2> Login</h2>
+
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <label for="password"></label>
+                    <input type="email" id="password" placeholder="password" required>
 
                     <div>
-                        <h1> Shuttle System</h1>
+                        <label> <input type="checkbox" > Remember me</label>
+                        <a href="#">Or forgot password?</a>
                     </div>
+
+                    <input type="submit" value="Login">
 
                     <div>
-                       <h2> login</h1>
-                       <label for = "email">Email</label>
-                       <input type = "email" id = "email" placeholder="Enter your email" required>
+                        <a href="#">Or sign up</a>
                     </div>
-
-                    <div>
-                       <label for = "Password">Password</label>
-                       <input type = "password" id = "password" placeholder="Enter your password" required>
-                    </div>
-
-                    <div>
-                       <label>
-                       <input type = "checkbox">Remeber me
-                       </label>
-
-                       <a href="#" class = "forgot"> or forgot password?</a>
-                    </div>
-
-                    <div>
-                        <input type="submit" value ="Login">
-                    </div>
-
-                    <div>
-                        <input type="submit" value ="Or Sign up">
-                    </div>
-
 
 
 
                 </form>
 
             </div>
+
 
         </div>
     </body>
