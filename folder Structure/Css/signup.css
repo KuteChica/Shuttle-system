@@ -1,5 +1,5 @@
 body{
-   
+    background-image:linear-gradient(to right, blue white)  ;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -26,26 +26,29 @@ h1{
     width: 100%;
     max-width :400px;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    
 }
 .logo{
     width: 80;
     margin-bottom: 20;
 }
 form input{
-    width: 60%;
+    width: 70%;
     padding: px;
     margin: 12px 0;
     border-radius: 10px;
 
 }
 button{
-    width: 60px;
+    height: 60;
+    width: 80px;
     padding: 5px;
-    background-color: rgba(17, 3, 37, 0.611);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 27, 37);
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    
 }
 button:hover{
     background-color: rgb(8, 118, 157);
