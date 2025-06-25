@@ -4,6 +4,8 @@ body {
 
 
 }
+/* my css starts from this side and this is just for the header -- just create a comment like this and start your css for thr footer
+*/
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +27,7 @@ nav a {
     color: white;
     text-decoration: none;
     margin-left: 40px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     padding: 8px 4px;
     border-radius: 5px;
