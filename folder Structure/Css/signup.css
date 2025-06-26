@@ -1,12 +1,12 @@
 body{
-    background-image:linear-gradient(to right, blue white)  ;
+    background-image:linear-gradien to rgb(0, 174, 255) ;
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: hsla(197, 81%, 45%, 0.83);
-    font-family: Arial, Helvetica, sans-serif;
+    background:  rgb(0, 174, 255);
+    font-family: segoe UI fantasy;
     
 }
 form{
