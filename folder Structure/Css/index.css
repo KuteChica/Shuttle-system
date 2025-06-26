@@ -4,21 +4,21 @@ body {
 
 
 }
-/* my css starts from this side and this is just for the header -- just create a comment like this and start your css for thr footer
+/* my css starts from this side and this is just for the header -- just create a comment like this and start your css for the footer
 */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1px 30px;
-    background-color: rgb(0, 174, 255);
+    background: linear-gradient(to bottom, rgb(0, 174, 255), rgb(34, 47, 66));
     color: white;
     border-radius: 8px;
 
 }
 
 .logo {
-    height: 100px;
+    height: 70px;
     border-radius: 70px;
 }
 
