@@ -198,7 +198,7 @@ footer{
  .first-container {
     width:100% ;
     height: 700px;
-    background-image: url("../Images/section1.jpg");
+    background-image: url("../Images");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
