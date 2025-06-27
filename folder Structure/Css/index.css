@@ -205,8 +205,25 @@ font-weight: 400;
  .first-container {
     width:100% ;
     height: 700px;
-    background-image: url("../Images");
+    background-image: url('../Images/section1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+ }
+
+ .first-section {
+    width: 100%;
+    height: 70vh;
+    padding: 0px 0px 0px 70px;
+    align-content: center;
+    align-items: center;
+    justify-items: left;
+    justify-content: center;
+    font-family: 'Segoe UI';
+    
+ }
+
+ .first-section h1 {
+    color: blue;
+
  }
