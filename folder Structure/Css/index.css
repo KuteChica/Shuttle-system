@@ -68,6 +68,10 @@ footer{
     color: white;
     opacity: o.9;
 }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 /*hover effect on social media icoins*/
 .socialicons a:hover{
     background-color: rgb(11, 78, 133) ;
@@ -98,8 +102,23 @@ opacity: 0.7;
 text-transform: 1px;
 letter-spacing: 1px;
 font-weight: 400;
-
+margin:opx 5px
   }
+@media (max-width:70){
+    .footerNav ul{
+        flex-direction:column;
+
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+    
+
+  
 
 
 
