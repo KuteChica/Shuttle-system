@@ -1,5 +1,6 @@
 body {
     font-family:segoe UI;
+    overflow-x: hidden;
 
 
 
@@ -261,16 +262,6 @@ margin:opx 5px
 
  }
 
- .first-section input {
-    height: 50px;
-    width: 200px;
-    margin-right: 100px;
-    border:none ;
-    border-radius: 16px;
-    font-size: 17px;
-    font-weight: 700;
-    color: rgb(15, 186, 238) ;
-  
+ 
     
- }
-
+ 
