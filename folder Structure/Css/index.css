@@ -286,11 +286,9 @@ margin:opx 5px
     justify-content: center;
     height: 50px;
     width: 400px;
-    border: 5px;
-    border-color: blue;
     background-color: rgb(233, 248, 248);
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 30px;
     font-weight: 700;
     color: rgb(0, 174, 255);
@@ -304,7 +302,9 @@ margin:opx 5px
     margin-top: 50px;
  }
 
- /* Are you tired */
+
+
+ /* the first div */
  .good-one {
    display: block;
     background-image: url('../Images/explanation/tired.jpg');
@@ -317,7 +317,16 @@ margin:opx 5px
     border-radius: 16px;
  }
 
-  .good-two{
+
+ /* The over lay codes- its kinda transparent and has a blue-black bottom color */
+ .good-one ::before {
+    content: '';
+    background: linear-gradient(to bottom, rgba(236, 236, 236, 0), rgba(0, 0, 0, 0.8));
+ }
+
+
+ /* the second div */
+.good-two{
     display: block;
     background-image: url('../Images/explanation/gps2.jpg');
     background-position: center;
@@ -330,7 +339,7 @@ margin:opx 5px
  }
 
 
-/* All you need is your device */
+/* The 3rd div */
   .good-three {
     display: block;
     background-image: url('../Images/explanation/know.jpg');
@@ -338,11 +347,13 @@ margin:opx 5px
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow:  0 0 15px rgba(13, 29, 43, 0.6);
-    
     width:250px ;
     height:400px ;
     border-radius: 16px;
  }
+
+
+
 
 
 /* for the huge Numbers */
