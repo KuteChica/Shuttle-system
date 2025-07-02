@@ -252,11 +252,19 @@ margin:opx 5px
     color: rgb(255, 255, 255);
     margin-right: 150px;
     font-size: 50px;
+    width:30%;
+    text-align: center;
     
  }
- 
- .first-section h1 :hover{
+ /* this is the hover for  "Rush Hour" */
+ .first-section h1:hover{
     color: aqua;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(13, 29, 43, 0.6);
+    width:30%;
+    text-align: center;
+    border-radius: 16px;
  }
 
  .first-section p {
@@ -267,6 +275,16 @@ margin:opx 5px
 
 
  }
+ /* This is the hover for the paragraph */
+ .first-section p:hover{
+    color: rgb(103, 143, 196);
+    transition: all 0.3s ease;
+ }
+
+
+
+
+ 
 
  /* This is where the second section comes in the picture */
 
@@ -335,11 +353,20 @@ margin:opx 5px
     z-index: 1;
 }
 
+.good-one:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
 /* Ensure content inside .good-one is above the overlay */
 .good-one > * {
     position: relative;
     z-index: 2;
 }
+
+
+
+
 
 /* the second div */
 .good-two{
@@ -373,6 +400,14 @@ margin:opx 5px
     position: relative;
     z-index: 2;
 }
+
+.good-two:hover {
+    transform: scale(1.03);
+    transition:all 0.3s ease;
+}
+
+
+
 
 
 
@@ -408,6 +443,10 @@ margin:opx 5px
 .good-three> * {
     position: relative;
     z-index: 2;
+}
+.good-three:hover {
+    transform: scale(1.03);
+    transition:all 0.3s ease;
 }
 
 
@@ -449,12 +488,64 @@ margin:opx 5px
     font-weight: 500;
 }
 
+.goal:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
 
 /* The learn more div starts from this side */
 
+/* this is for the learn more text */
 .learn-more {
-    background-color: aqua;
+    background-color: rgb(233, 248, 248);
     width: 70%;
     height: 100px;
     border-radius: 16px;
+    margin-top: 20px;
+}
+
+.learn-more:hover {
+    background-color: rgb(217, 235, 235);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    color: rgb(233, 248, 248) ;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    
+}
+
+.lm-p {
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgb(0, 140, 210);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:5px ;
+
+}
+
+
+/* Text inside the "why Rush hour */
+.imagine {
+    margin-top: 0;
+    margin-left: 30px;
+}
+/* the button inside the "why rush hour " */
+.lm-button {
+    border: none;
+    width:150px;
+    height: 50px;
+    border-radius: 14px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    font-family: "segoe UI";
+    font-size: 20px;
+    font-weight: 700;
+  
+
+}
+/* The div that contains ...halle.. and learn more */
+.why {
+    display: flex;
+    gap: 50px;
 }
