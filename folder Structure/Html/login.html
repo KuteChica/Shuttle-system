@@ -1,39 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Login | Shuttle System</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
-        <link rel="stylesheet" href="../Css/login.css">
+<head>
+  <title>Login | Shuttle System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="../Images/bus-logo.png" alt="shuttle logo" style="width:150px;">
+    <h1>Login</h1>
 
-    </head>
-    <body>
-        <div class="login-container">
-        <img src="../Images/bus-logo.png" alt="shuttle logo" style="width:150px;">
-        <h1>Login</h1>
-        
-        
-        <form id="Login" class = "form">
-            
-           
-            
+    <form id="loginForm" class="form">
+      <div id="loginMessage" class="messagediv" style="display:none"></div>
 
-            <input type="email" placeholder="Email" required><br>
+      <input type="email" id="email" placeholder="Email" required><br><br>
 
-            <br>
-            <input type="password"placeholder ="password "required><br>
-            
-             <button>Login</button><br>
-          
-            <br>
-            New Here? <a href="signUp.html">sign-up</a>  
-            <br>
-           
-            
+      <input type="password" id="password" placeholder="Password" required><br><br>
 
-        </form>
-        </div>
+      <button id="submitLogin" type="submit">Login</button><br><br>
 
-       
-        
+      <p>New here? <a href="signup.html">Sign up</a></p>
+    </form>
+  </div>
+
+  <!-- Firebase login logic -->
+  <script type="module" src="../JavaScripts/login.js"></script>
+</body>
 </html>
