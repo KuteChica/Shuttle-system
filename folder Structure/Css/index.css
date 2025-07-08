@@ -58,17 +58,21 @@ footer{
     justify-content: center;
 }
 .socialicons a{
-    text-decoration: none;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
     background-color: white;
-    margin:10px;
-    border-radius:50% ;
-
+    margin: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-.socialicons ai{
-    font-size: 2em;
-    color: white;
-    opacity: o.9;
+.socialicons a i{
+    font-size: 24px;
+    color: rgb(0, 174, 255);
 }
 ul {
   list-style-type: none;
@@ -119,6 +123,8 @@ margin:opx 5px
 
 }
 
+/* this si where the codes for the footer ends */
+
 .about-heading-box {
   background-color: rgb(0, 174, 255);
   padding: 15px 25px;
@@ -139,6 +145,14 @@ margin:opx 5px
 }
 h3{
     text-align: center;
+}
+
+/* The codes for the Third section---together with all the corrections */
+.third-section {
+    display: block;
+    width: 100%;
+    height:200vh;
+
 }
 
 .features-container {
@@ -165,12 +179,34 @@ h3{
 }
 
 .feature-icon {
-  font-size: 40px;
+  font-size: 32px;
   color: #007bff;
   margin-bottom: 15px;
   border: 2px solid #007bff;
-  padding: 15px;
+  padding: 0;
   border-radius: 50%;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Ensure icon is perfectly centered vertically */
+.feature-icon i {
+  line-height: 1;
+  padding-top: 2px; /* Adjust as needed for perfect centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
   
 .feature-box h3 {
@@ -195,8 +231,8 @@ h3{
 }
 
 .feature-images img {
-  width: 70%;
-  max-width: 600px;
+  width: 40%;
+  max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -204,6 +240,11 @@ h3{
 
 .feature-images img:hover {
   transform: scale(1.03);
+}
+
+.about-features-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 
@@ -339,11 +380,19 @@ h3{
     color: rgb(255, 255, 255);
     margin-right: 150px;
     font-size: 50px;
+    width:30%;
+    text-align: center;
     
  }
- 
- .first-section h1 :hover{
+ /* this is the hover for  "Rush Hour" */
+ .first-section h1:hover{
     color: aqua;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(13, 29, 43, 0.6);
+    width:30%;
+    text-align: center;
+    border-radius: 16px;
  }
 
  .first-section p {
@@ -354,6 +403,16 @@ h3{
 
 
  }
+ /* This is the hover for the paragraph */
+ .first-section p:hover{
+    color: rgb(103, 143, 196);
+    transition: all 0.3s ease;
+ }
+
+
+
+
+ 
 
  /* This is where the second section comes in the picture */
 
@@ -363,7 +422,7 @@ h3{
     align-items: center;
     justify-items: center;
     justify-content:center;
-    height:110vh;
+    height:130vh;
 
  }
 
@@ -422,11 +481,20 @@ h3{
     z-index: 1;
 }
 
+.good-one:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
 /* Ensure content inside .good-one is above the overlay */
 .good-one > * {
     position: relative;
     z-index: 2;
 }
+
+
+
+
 
 /* the second div */
 .good-two{
@@ -460,6 +528,14 @@ h3{
     position: relative;
     z-index: 2;
 }
+
+.good-two:hover {
+    transform: scale(1.03);
+    transition:all 0.3s ease;
+}
+
+
+
 
 
 
@@ -495,6 +571,10 @@ h3{
 .good-three> * {
     position: relative;
     z-index: 2;
+}
+.good-three:hover {
+    transform: scale(1.03);
+    transition:all 0.3s ease;
 }
 
 
@@ -536,12 +616,88 @@ h3{
     font-weight: 500;
 }
 
+.goal:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
 
 /* The learn more div starts from this side */
 
+/* this is for the learn more text */
 .learn-more {
-    background-color: aqua;
+    background-color: rgb(233, 248, 248);
     width: 70%;
-    height: 100px;
+    height: 150px;
     border-radius: 16px;
+    margin-top: 20px;
+}
+
+.learn-more:hover {
+    background-color: rgb(217, 235, 235);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    color: rgb(13, 132, 168) ;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    
+}
+
+.lm-p {
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgb(0, 140, 210);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+
+}
+
+
+/* Text inside the "why Rush hour */
+.imagine {
+    margin-top: 0;
+    margin-left: 30px;
+    font-weight: 600;
+    color: #333;
+}
+/* the button inside the "why rush hour " */
+.lm-button {
+    border: none;
+    width:150px;
+    height: 50px;
+    border-radius: 14px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    font-family: "segoe UI";
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(0, 140, 210) ;
+  
+
+}
+
+/* hover for the learn more button */
+
+.lm-button:hover {
+    box-shadow: 0 0 15px rgba(13,29,43,0.6);
+    color: rgb(50, 160, 214);
+}
+/* The div that contains ...halle.. and learn more */
+.why {
+    display: flex;
+    gap: 50px;
+}
+.footer-container {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  padding: 40px 0 20px 0;
+  background: rgb(0, 174, 255);
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }
