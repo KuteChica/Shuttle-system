@@ -48,7 +48,8 @@ footer{
     background-color:   rgb(0, 174, 255);
 }
 .footercontainer{
-    width:100% ;
+    height: 10px;
+    width:1 0% ;
     padding: 70px 30px 20px;
 
 }
@@ -57,17 +58,21 @@ footer{
     justify-content: center;
 }
 .socialicons a{
-    text-decoration: none;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
     background-color: white;
-    margin:10px;
-    border-radius:50% ;
-
+    margin: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-.socialicons ai{
-    font-size: 2em;
-    color: white;
-    opacity: o.9;
+.socialicons a i{
+    font-size: 24px;
+    color: rgb(0, 174, 255);
 }
 ul {
   list-style-type: none;
@@ -118,30 +123,36 @@ margin:opx 5px
 
 }
 
-.about-heading-box{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(0, 174, 255);
-padding: 15px 25px;
-border-radius: 8px;
-display: inline-block;
-margin-bottom: 20px;
-box-shadow: 0 4px 8px rgb(185, 180, 180) ;
-} 
-.about-heading-box h2 {
-    align-items: center;
-    justify-content: center;
-  color: white;
+/* this si where the codes for the footer ends */
 
+.about-heading-box {
+  background-color: rgb(0, 174, 255);
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin: 0 auto 20px auto; /* THIS centers it */
+  box-shadow: 0 4px 8px rgb(185, 180, 180);
+  text-align: center;
+  max-width: 400px;         /* Optional: to keep it neat */
+  display: block;           /* Changed from inline-block */
+}
+
+.about-heading-box h2 {
+  color: white;
   font-size: 28px;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-  #features {
-  background-color: #f4f4f4;
-  padding: 50px 10px;
+h3{
+    text-align: center;
+}
+
+/* The codes for the Third section---together with all the corrections */
+.third-section {
+    display: block;
+    width: 100%;
+    height:200vh;
+
 }
 
 .features-container {
@@ -168,12 +179,34 @@ box-shadow: 0 4px 8px rgb(185, 180, 180) ;
 }
 
 .feature-icon {
-  font-size: 40px;
+  font-size: 32px;
   color: #007bff;
   margin-bottom: 15px;
   border: 2px solid #007bff;
-  padding: 15px;
+  padding: 0;
   border-radius: 50%;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Ensure icon is perfectly centered vertically */
+.feature-icon i {
+  line-height: 1;
+  padding-top: 2px; /* Adjust as needed for perfect centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
   
 .feature-box h3 {
@@ -198,8 +231,8 @@ box-shadow: 0 4px 8px rgb(185, 180, 180) ;
 }
 
 .feature-images img {
-  width: 100%;
-  max-width: 400px;
+  width: 40%;
+  max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -207,6 +240,11 @@ box-shadow: 0 4px 8px rgb(185, 180, 180) ;
 
 .feature-images img:hover {
   transform: scale(1.03);
+}
+
+.about-features-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 
@@ -649,4 +687,17 @@ box-shadow: 0 4px 8px rgb(185, 180, 180) ;
 .why {
     display: flex;
     gap: 50px;
+}
+.footer-container {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  padding: 40px 0 20px 0;
+  background: rgb(0, 174, 255);
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }
