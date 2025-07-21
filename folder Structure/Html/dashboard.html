@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Home UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #b792f9, #e1d4fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 30px;
+      padding: 20px;
+      width: 240px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      flex: 1 1 240px;
+    }
+    .card.intro {
+      background: linear-gradient(to bottom right, #5a2ca1, #8753e4);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .card.intro h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card.intro p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .card.intro .nav-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 0.5rem;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: #bbb;
+      border-radius: 50%;
+    }
+    .dot.active {
+      background: #fff;
+    }
+    .card.main h2 {
+      margin-bottom: 10px;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .control {
+      background: #f3f3f3;
+      border-radius: 15px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .toggle {
+      background: #ccc;
+      border-radius: 20px;
+      width: 40px;
+      height: 20px;
+      position: relative;
+    }
+    .toggle::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      background: white;
+      border-radius: 50%;
+    }
+    .card.temp {
+      background: linear-gradient(to bottom right, #4a2ca1, #a077f3);
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .temp-display {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .time-range {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Welcome Panel -->
+    <div class="card intro">
+      <h1>Welcome to Your Smart Home</h1>
+      <p>Easily manage your lights, thermostats, cameras and more all in one place</p>
+      <div class="nav-dots">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- Center Control Panel -->
+    <div class="card main">
+      <h2>Hi Tanvir<br><small>Good Morning</small></h2>
+      <div class="controls">
+        <div class="control">
+          <span>Smart TV</span>
+          <div class="toggle"></div>
+        </div>
+        <div class="control">
+          <span>Stamp Light</span>
+          <div class="toggle"></div>
+        </div>
+        <div class="control">
+          <span>Air Conditioner</span>
+          <span>23&deg;C</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Temperature Control Panel -->
+    <div class="card temp">
+      <h2>Air Conditioner</h2>
+      <div class="temp-display">23&deg;</div>
+      <div class="time-range">
+        <span>From 10:00am</span>
+        <span>To 3:00pm</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
