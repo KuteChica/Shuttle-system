@@ -57,9 +57,9 @@ signUpBtn.addEventListener("click", async (e) => {
 
     showMessage("Account created successfully!", "signupMessage");
 
-    // Redirect to login after short delay
+    // Redirect to dashboard after short delay
     setTimeout(() => {
-      window.location.href = "login.html";
+      window.location.href = "dashboard.html";
     }, 1500);
 
   } catch (error) {
