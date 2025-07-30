@@ -41,7 +41,7 @@ loginBtn.addEventListener("click", async (e) => {
 
     // Redirect to home page or dashboard
     setTimeout(() => {
-      window.location.href = "home.html";  // You can change this to your real dashboard/home
+      window.location.href = "dashboard.html";  // You can change this to your real dashboard/home
     }, 1500);
   } catch (error) {
     if (error.code === "auth/wrong-password") {
