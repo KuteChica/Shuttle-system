@@ -121,6 +121,18 @@
       margin-bottom: 10px;
     }
 
+    .viewMap {
+      background-image: url('https://www.shutterstock.com/shutterstock/photos/127728257/display_1500/stock-photo-street-map-with-gps-icons-navigation-127728257.jpg');
+      border-radius: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 20px;
+      width: 240px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      flex: 1 1 240px;
+    }
+
    .shuttleDetails{
      background: #bb2727;
       border-radius: 30px;
